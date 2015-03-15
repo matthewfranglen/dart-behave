@@ -1,0 +1,8 @@
+name: behave
+version: 0.0.1
+author: Matthew Franglen <matthew.franglen@gmail.com>
+homepage: https://github.com/matthewfranglen/dart-behave
+description: BDD testing framework
+dependencies:
+  annotate: ">=0.0.1 <0.1.0"
+  unittest: any
