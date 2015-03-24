@@ -108,35 +108,35 @@ are available and should be used.
 
 A feature can contain many scenarios:
 
-  Feature feature = new Feature("Source Code based feature declaration");
+    Feature feature = new Feature("Source Code based feature declaration");
 
-  feature.load(new Steps());
+    feature.load(new Steps());
 
-  feature.scenario("Changing the context")
-    .given("a default context")
-    .when("I add a number to the context")
-    .then("the number is available in subsequent steps")
-    .test();
+    feature.scenario("Changing the context")
+      .given("a default context")
+      .when("I add a number to the context")
+      .then("the number is available in subsequent steps")
+      .test();
 
-  feature.scenario("Changing the context")
-    .given("a default context")
-    .when("I add a string to the context")
-    .then("the string is available in subsequent steps")
-    .test();
+    feature.scenario("Changing the context")
+      .given("a default context")
+      .when("I add a string to the context")
+      .then("the string is available in subsequent steps")
+      .test();
 
-  ...
+    ...
 
 The _and_ keyword can be used to add additional steps. These steps will always
 be of the same type as the previous step.
 
-  feature.scenario("Using and")
-    .given("a default context")
-    .and("a puppy") // here and means given
-    .when("I add a number to the context")
-    .and("I add a string to the context") // here and means when
-    .then("the number is available in subsequent steps")
-    .and("the string is available in subsequent steps") // here and means then
-    .test();
+    feature.scenario("Using and")
+      .given("a default context")
+      .and("a puppy") // here and means given
+      .when("I add a number to the context")
+      .and("I add a string to the context") // here and means when
+      .then("the number is available in subsequent steps")
+      .and("the string is available in subsequent steps") // here and means then
+      .test();
 
 TODO
 ====
