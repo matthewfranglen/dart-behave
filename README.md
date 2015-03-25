@@ -138,6 +138,12 @@ be of the same type as the previous step.
       .and("the string is available in subsequent steps") // here and means then
       .test();
 
+Example Code
+------------
+
+Example code is available in the _example_ directory.
+
+
 TODO
 ====
 
